@@ -1,7 +1,82 @@
 body{
-    background-color: rgb(216, 226, 220);
+    background-color: rgb(244, 244, 244);
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #f5f5f5;
+    color: #4d4d4d;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
 }
 
-#group{
-    margin: 100px auto;
+.formGiris{
+    height: 90px;
+}
+
+.form-control{
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.yerler{
+    list-style: none;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 50px;
+}
+
+.yerlerimiz{
+    padding: 5px 10px ;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    line-height: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.yerlerimiz:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.32);
+    background-color: #dfe2df;
+    font-size: 22px;
+}
+
+
+.fa, .fas {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+li span{
+    margin-right: 10px;
+    color: rgba(58, 61, 58, 0);
+    vertical-align: baseline;
+}
+#penLogo{
+    margin-right: 10px;
+    color: rgba(58, 61, 58, 0);
+    vertical-align: baseline;
+}
+
+li:hover #penLogo{
+    margin-right: 20px;
+    color: rgba(58, 61, 58, 0.88);
+}
+
+li:hover span{
+    margin-right: 10px;
+    color: rgba(226, 26, 63, 0.71);
+}
+li:hover {
+    opacity: 1;
+}
+
+.ziyaretEdilmis{
+    text-decoration: line-through;
+    color: grey;
 }
