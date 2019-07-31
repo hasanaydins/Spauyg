@@ -1,8 +1,18 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/gezilecekYerler');
+const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost/gezilecekYerler';
+mongoose.Promise = Promise;
 mongoose.set('debug', true);
 
-mongoose.Promise = Promise;
+
+mongoose
+    .connect(CONNECTION_URI, {
+        useMongoClient: true
+    })
+    .then(() => {
+        console.log('connected to mongodb')
+    })
+    .catch(err => console.log(err));
+
 
 
 let yerSchema = new mongoose.Schema({

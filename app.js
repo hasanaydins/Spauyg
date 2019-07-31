@@ -4,13 +4,6 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     path = require('path');
 
-const mongoose = require('mongoose');
-const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost/gezilecekYerler';
-mongoose.Promise = Promise;
-mongoose.set('debug', true);
-
-
-
 const yerlerRoutes = require('./routes/yerler');
 
 app.use(express.static(__dirname + '/public'));
