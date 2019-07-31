@@ -1,21 +1,22 @@
-const   mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/gezilecekYerler');
 mongoose.set('debug', true);
 
 mongoose.Promise = Promise;
 
+
 let yerSchema = new mongoose.Schema({
-   isim: {
-       type: String,
-       required: 'Bos olamaz'
-   },
+    isim: {
+        type: String,
+        required: 'Bos olamaz'
+    },
     ziyaret: {
-       type: Boolean,
+        type: Boolean,
         default: false
     },
 
     olusturulmaTarihi: {
-       type: Date,
+        type: Date,
         default: Date.now
     }
 });
