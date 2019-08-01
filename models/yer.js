@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost/gezilecekYerler';
+const CONNECTION_URI = process.env.MONGOLAB_URI || 'mongodb://localhost/gezilecekYerler';
+
 mongoose.Promise = global.Promise;
 mongoose.set('debug', true);
 
