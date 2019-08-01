@@ -1,8 +1,25 @@
-const express = require('express'),
-    app = express(),
-    port = process.env.PORT || 3000,
-    bodyParser = require('body-parser'),
-    path = require('path');
+const   express     = require('express'),
+        app         = express(),
+        bodyParser  = require('body-parser'),
+        path        = require('path'),
+        port        = process.env.PORT || 3000;
+
+const mongoose = require('mongoose');
+const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost/gezilecekYerler';
+mongoose.Promise = global.Promise;
+mongoose.set('debug', true);
+
+
+mongoose
+    .connect(CONNECTION_URI, {
+        useMongoClient: true
+    })
+    .then(() => {
+        console.log('connected to mongodb')
+    })
+    .catch(err => console.log(err));
+
+
 
 const yerlerRoutes = require('./routes/yerler');
 
