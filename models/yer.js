@@ -15,7 +15,6 @@ mongoose
     .catch(err => console.log(err));
 
 
-
 let yerSchema = new mongoose.Schema({
     isim: {
         type: String,

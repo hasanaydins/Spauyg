@@ -2,8 +2,6 @@ body{
     background-color: rgb(244, 244, 244);
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4em;
-    background: #f5f5f5;
-    color: #4d4d4d;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -13,14 +11,30 @@ body{
 .formGiris{
     height: 90px;
 }
-
-.form-control{
-    background-color: #fff;
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    background-color: rgba(86, 54, 255, 0.95);
     border-radius: 30px;
     height: 50px;
+    color: #f3f6f3;
     font-size: 15px;
     padding-left: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border: 0px;
+    box-shadow: 0 5px 16px 0 rgba(86, 54, 255, 0.3);
+}
+.form-control{
+    background-color: rgba(86, 54, 255, 0.95);
+    border-radius: 30px;
+    height: 50px;
+    color: #f3f6f3;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 0px;
+    box-shadow: 0 5px 16px 0 rgba(86, 54, 255, 0.3);
+}
+.form-control::-webkit-input-placeholder {
+    color: #d6d6d6 !important;
 }
 .yerler{
     list-style: none;
