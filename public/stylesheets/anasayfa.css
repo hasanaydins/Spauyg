@@ -1,6 +1,5 @@
 body{
     background-color: rgb(244, 244, 244);
-    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4em;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
@@ -8,12 +7,14 @@ body{
     font-weight: 400;
 }
 
+
 .formGiris{
     height: 90px;
 }
-.form-control:active,
-.form-control:focus,
-.form-control:focus:active {
+
+.form-controlz:active,
+.form-controlz:focus,
+.form-controlz:focus:active {
     background-color: rgba(86, 54, 255, 0.95);
     border-radius: 30px;
     height: 50px;
@@ -23,18 +24,34 @@ body{
     border: 0px;
     box-shadow: 0 5px 16px 0 rgba(86, 54, 255, 0.3);
 }
+
 .form-control{
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    color: #f3f6f3;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.form-controlz{
     background-color: rgba(86, 54, 255, 0.95);
     border-radius: 30px;
     height: 50px;
+    width: 100%;
+    outline: none;
     color: #f3f6f3;
     font-size: 15px;
     padding-left: 20px;
     border: 0px;
     box-shadow: 0 5px 16px 0 rgba(86, 54, 255, 0.3);
 }
-.form-control::-webkit-input-placeholder {
+
+.form-controlz::-webkit-input-placeholder {
     color: #d6d6d6 !important;
+    font-weight:500 ;
 }
 .yerler{
     list-style: none;

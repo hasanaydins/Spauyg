@@ -8,7 +8,33 @@
     <link rel="stylesheet" type="text/css"  href="stylesheets/anasayfa.css">
   </head>
   <body>
+    <div class="navim">
+        <nav class="navbar navbar-expand-lg navbar-light mx-5">
+            <a class="navbar-brand" href="#">TODO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+      
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchForm" type="search" placeholder="Search Notes" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0 rounded-pill" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+    
 
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-md-offset-2 pt-5 pb-0 " id="group">
@@ -17,7 +43,8 @@
           </header>
           <section class="pt-4 px-5 formGiris">
 
-            <input type="text" class="form-control text-white" id="bizimInput" placeholder="Not giriniz..">
+            <input type="text" class="form-controlz text-white" id="bizimInput" placeholder="Not giriniz..">
+            
             <div class="uyari pt-2">
             </div>
           </section>
