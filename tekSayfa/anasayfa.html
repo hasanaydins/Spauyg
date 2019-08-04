@@ -9,25 +9,24 @@
   </head>
   <body>
     <div class="navim">
-        <nav class="navbar navbar-expand-lg navbar-light mx-5">
-            <a class="navbar-brand" href="#">TODO</a>
+        <nav class="navbar navbar-expand-lg navbar-light mx-sm-3 mx-md-4 mx-2 mx-xl-5">
+            <a class="navbar-brand" href="#"><i class="fas fa-check-double "></i>TODO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button> 
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav ml-4 mt-2 mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#">Anasayfa</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="#">Çıkış</a>
                 </li>
       
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchForm" type="search" placeholder="Search Notes" aria-label="Search">
-                <button class="btn btn-success my-2 my-sm-0 rounded-pill" type="submit">Search</button>
+              <form id="search-notes">
+                <input class="form-control mr-sm-2 mt-2" type="text" placeholder="Not Ara" aria-label="Search">
               </form>
             </div>
           </nav>
@@ -43,17 +42,19 @@
           </header>
           <section class="pt-4 px-5 formGiris">
 
-            <input type="text" class="form-controlz text-white" id="bizimInput" placeholder="Not giriniz..">
+            <input type="text" class="form-controlz text-white" id="bizimInput" autocomplete="off" placeholder="Not giriniz..">
             
             <div class="uyari pt-2">
             </div>
+            <div>
+                <ul class="yerler mx-auto">
+                  </ul>
+            </div>
           </section>
-            <ul class="yerler">
-            </ul>
+            
         </div>
       </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/4e2facca41.js"></script>

@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+            const searchBar = document.forms['search-notes'].querySelector('input');
+            const list = document.querySelector('.yerler');
+
+        searchBar.addEventListener('keyup', function(e){
+
+          const term = e.target.value.toLowerCase();
+          const notes = list.getElementsByTagName('li');
+          Array.from(notes).forEach(function(note){
+            const title = note.textContent;
+            if (title.toLowerCase().indexOf(term) != -1){
+                note.style.display = 'block';
+            } else {
+                note.style.display = 'none';
+            }
+          });
+        });
+
     var yerler = $.getJSON("/api/yerler");
 
     yerler
@@ -41,7 +59,7 @@ function yerlerEkle(yerler) {
 
 function yerEkle(yer) {
 
-    var yeniYer = $('<li class="yerlerimiz">' + yer.isim + '<span><i class="fas fa-trash float-right fa-xs  ml-2"></i></span></li>');
+    var yeniYer = $('<li class="yerlerimiz">' + yer.isim + '<span><i id="mobil" class="fas fa-trash-alt float-right fa-xs"></i></span></li>');
 
     yeniYer.data('id', yer._id);
     yeniYer.data('ziyaretDurumu', yer.ziyaret);
@@ -51,8 +69,8 @@ function yerEkle(yer) {
     }
 
     $('.yerler').append(yeniYer);
-}
 
+}
 function yeniSehirEkle() {
     var yeniSehir = $('#bizimInput').val();
     if (yeniSehir == '') {

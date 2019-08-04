@@ -41,7 +41,7 @@ router.get('/:yerID', (req, res) => {
 
 });
 
-router.put('/:yerId', (req, res) => {
+router.put('/home/:yerId', (req, res) => {
    Yer.findByIdAndUpdate({_id: req.params.yerId}, req.body, {new: true})
        .then((yer) => {
            res.json(yer);

@@ -7,7 +7,6 @@ mongoose.set('debug', true);
 
 mongoose
     .connect(CONNECTION_URI, {
-        useMongoClient: true
     })
     .then(() => {
         console.log('connected to mongodb')
